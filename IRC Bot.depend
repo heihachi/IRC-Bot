@@ -1,0 +1,910 @@
+# depslib dependency file v1.0
+1395819518 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\main.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<ace/OS.h>
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os.h
+	"ace/Cleanup.h"
+	"ace/Object_Manager_Base.h"
+	"ace/OS_main.h"
+	"ace/OS_NS_arpa_inet.h"
+	"ace/OS_NS_ctype.h"
+	"ace/OS_NS_dirent.h"
+	"ace/OS_NS_dlfcn.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/OS_NS_math.h"
+	"ace/OS_NS_netdb.h"
+	"ace/OS_NS_poll.h"
+	"ace/OS_NS_pwd.h"
+	"ace/OS_NS_regex.h"
+	"ace/OS_NS_signal.h"
+	"ace/OS_NS_stdio.h"
+	"ace/OS_NS_stdlib.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_strings.h"
+	"ace/OS_NS_stropts.h"
+	"ace/OS_NS_sys_mman.h"
+	"ace/OS_NS_sys_msg.h"
+	"ace/OS_NS_sys_resource.h"
+	"ace/OS_NS_sys_select.h"
+	"ace/OS_NS_sys_shm.h"
+	"ace/OS_NS_sys_socket.h"
+	"ace/OS_NS_sys_stat.h"
+	"ace/OS_NS_sys_time.h"
+	"ace/OS_NS_sys_uio.h"
+	"ace/OS_NS_sys_utsname.h"
+	"ace/OS_NS_sys_wait.h"
+	"ace/OS_NS_Thread.h"
+	"ace/OS_NS_time.h"
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_wchar.h"
+	"ace/OS_Memory.h"
+	"ace/OS_TLI.h"
+	"ace/OS_Errno.h"
+	"ace/Default_Constants.h"
+	"ace/Global_Macros.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\cleanup.h
+	"ace/config-lite.h"
+	"ace/Intrusive_List.h"
+	"ace/Intrusive_List_Node.h"
+	"ace/Global_Macros.h"
+	"ace/Cleanup.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-lite.h
+	"ace/config-macros.h"
+	"ace/ace_wchar.h"
+	<Cstd/stdcomp.h>
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-macros.h
+	"ace/config.h"
+	"ace/Version.h"
+	"ace/Versioned_Namespace.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config.h
+	"ace/config-win32.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32.h
+	"ace/config-win32-common.h"
+	"ace/config-win32-msvc.h"
+	"ace/config-win32-cegcc.h"
+	"ace/config-win32-mingw64.h"
+	"ace/config-win32-mingw.h"
+	"ace/config-win32-dmc.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-common.h
+	"ace/config-WinCE.h"
+	<nb30.h>
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-wince.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-msvc.h
+	"ace/config-win32-msvc-10.h"
+	"ace/config-win32-msvc-9.h"
+	"ace/config-win32-msvc-8.h"
+	"ace/config-win32-msvc-7.h"
+	<malloc.h>
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-msvc-10.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-msvc-9.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-msvc-8.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-msvc-7.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-cegcc.h
+	"ace/config-g++-common.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-g++-common.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-mingw64.h
+	"ace/config-g++-common.h"
+	<stdio.h>
+	<stdlib.h>
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-mingw.h
+	"ace/config-g++-common.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-win32-dmc.h
+	"io.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\version.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\versioned_namespace.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\ace_wchar.h
+	"ace/config-macros.h"
+	"ace/ace_wchar.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\ace_wchar.inl
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list.h
+	"ace/Intrusive_List.inl"
+	"ace/Intrusive_List.cpp"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list.inl
+	<algorithm>
+
+1395814800 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list.cpp
+	"ace/Intrusive_List.h"
+	"ace/Intrusive_List.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list_node.h
+	"ace/Intrusive_List_Node.inl"
+	"ace/Intrusive_List_Node.cpp"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list_node.inl
+
+1395814800 c:\users\ashley\downloads\heihachi\devpaks\include\ace\intrusive_list_node.cpp
+	"ace/Intrusive_List_Node.h"
+	"ace/Intrusive_List_Node.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\global_macros.h
+	"ace/config-lite.h"
+	"ace/Assert.h"
+	"ace/OS_Errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\assert.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_errno.h
+	"ace/OS_NS_errno.h"
+	"ace/OS_Errno.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_errno.h
+	"ace/config-lite.h"
+	"ace/os_include/os_errno.h"
+	"ace/OS_NS_errno.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_errno.h
+	"ace/config-lite.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_errno.inl
+	"ace/config-all.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\config-all.h
+	"ace/config-lite.h"
+	"ace/OS_NS_stdio.h"
+	"ace/Trace.h"
+	"ace/Trace.h"
+	"ace/OS_main.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stdio.h
+	"ace/config-all.h"
+	"ace/os_include/os_stdio.h"
+	"ace/os_include/os_fcntl.h"
+	"ace/os_include/os_inttypes.h"
+	"ace/os_include/os_unistd.h"
+	"io.h"
+	"ace/OS_NS_stdio.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stdio.h
+	"ace/config-lite.h"
+	"ace/os_include/os_stdarg.h"
+	"ace/os_include/os_stddef.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stdarg.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stddef.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_fcntl.h
+	"ace/os_include/sys/os_stat.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_stat.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_types.h
+	"ace/config-lite.h"
+	"ace/os_include/os_stddef.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_inttypes.h
+	"ace/config-lite.h"
+	"ace/os_include/os_stdint.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stdint.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_unistd.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_inttypes.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stdio.inl
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_stdlib.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_pwd.h"
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_sys_stat.h"
+	"ace/OS_Memory.h"
+	<trio.h>
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_unistd.h
+	"ace/config-all.h"
+	"ace/Time_Value.h"
+	"ace/Basic_Types.h"
+	"ace/os_include/os_unistd.h"
+	"ace/os_include/os_stdio.h"
+	"ace/OS_NS_unistd.inl"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\time_value.h
+	"ace/os_include/os_time.h"
+	"ace/Basic_Types.h"
+	"ace/iosfwd.h"
+	"ace/Time_Value.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_time.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\basic_types.h
+	"ace/config-lite.h"
+	"ace/os_include/os_limits.h"
+	"ace/os_include/os_float.h"
+	"ace/os_include/os_stdlib.h"
+	"ace/os_include/os_stddef.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/ACE_export.h"
+	<stdint.h>
+	<inttypes.h>
+	"ace/If_Then_Else.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_limits.h
+	"ace/config-lite.h"
+	"ace/os_include/os_unistd.h"
+	"ace/os_include/os_stdio.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_float.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stdlib.h
+	"ace/config-lite.h"
+	"ace/os_include/os_stddef.h"
+	"ace/os_include/sys/os_wait.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_wait.h
+	"ace/config-lite.h"
+	"ace/os_include/os_signal.h"
+	"ace/os_include/sys/os_resource.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_signal.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_ucontext.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_ucontext.h
+	"ace/config-lite.h"
+	"ace/os_include/os_signal.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_resource.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_time.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_time.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\ace_export.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\if_then_else.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\iosfwd.h
+	"ace/streams.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\streams.h
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\time_value.inl
+	"ace/Truncate.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\truncate.h
+	"ace/config-all.h"
+	"ace/Global_Macros.h"
+	"ace/If_Then_Else.h"
+	"ace/Numeric_Limits.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\numeric_limits.h
+	"ace/Basic_Types.h"
+	<limits>
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_unistd.inl
+	"ace/OS_NS_sys_utsname.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/Default_Constants.h"
+	"ace/OS_Memory.h"
+	"ace/Truncate.h"
+	"ace/os_include/os_time.h"
+	"ace/OS_NS_stdio.h"
+	"ace/os_include/os_unistd.h"
+	"ace/os_include/os_strings.h"
+	"ace/os_include/os_string.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_utsname.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_utsname.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_utsname.h
+	"ace/config-lite.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_string.h
+	"ace/config-lite.h"
+	"ace/Basic_Types.h"
+	"ace/OS_NS_string.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_string.inl
+	"ace/OS_NS_wchar.h"
+	"ace/os_include/os_string.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_wchar.h
+	"ace/config-all.h"
+	"ace/os_include/os_wchar.h"
+	"ace/Basic_Types.h"
+	"ace/ace_wchar.h"
+	"ace/os_include/os_errno.h"
+	"ace/OS_NS_wchar.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_wchar.h
+	"ace/os_include/os_stdio.h"
+	"ace/os_include/os_stdlib.h"
+	"ace/os_include/os_time.h"
+	"ace/os_include/os_string.h"
+	"ace/os_include/os_ctype.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_string.h
+	"ace/os_include/os_stddef.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_ctype.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_wchar.inl
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_macros.h
+	"ace/config-all.h"
+	"ace/Basic_Types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_fcntl.h
+	"ace/config-all.h"
+	"ace/os_include/os_fcntl.h"
+	"ace/Global_Macros.h"
+	"ace/Default_Constants.h"
+	"ace/OS_NS_fcntl.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\default_constants.h
+	"ace/os_include/os_limits.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_fcntl.inl
+	"ace/OS_NS_errno.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_memory.h
+	"ace/OS_Errno.h"
+	"ace/Basic_Types.h"
+	"ace/os_include/os_stddef.h"
+	"ace/OS_NS_stdlib.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stdlib.h
+	"ace/config-all.h"
+	"ace/os_include/os_stdlib.h"
+	"ace/Basic_Types.h"
+	"ace/OS_NS_stdlib.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stdlib.inl
+	"ace/config-all.h"
+	"ace/Object_Manager_Base.h"
+	"ace/OS_NS_string.h"
+	"ace/Global_Macros.h"
+	"ace/os_include/os_errno.h"
+	"ace/os_include/os_search.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\object_manager_base.h
+	"ace/config-lite.h"
+	"ace/Cleanup.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_signal.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_search.h
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_strings.h
+	"ace/os_include/os_stddef.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_pwd.h
+	"ace/config-all.h"
+	"ace/os_include/os_pwd.h"
+	"ace/OS_NS_pwd.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_pwd.h
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_pwd.inl
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_stat.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_stat.h"
+	"ace/Default_Constants.h"
+	"ace/OS_NS_sys_stat.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_stat.inl
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_macros.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\trace.h
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_main.h
+	<resolvLib.h>
+	"ace/Argv_Type_Converter.h"
+	"ace/Argv_Type_Converter.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\argv_type_converter.h
+	"ace/OS_Memory.h"
+	"ace/Argv_Type_Converter.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\argv_type_converter.inl
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_errno.inl
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\cleanup.inl
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_arpa_inet.h
+	"ace/config-all.h"
+	"ace/os_include/arpa/os_inet.h"
+	"ace/OS_NS_arpa_inet.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\arpa\os_inet.h
+	"ace/os_include/netinet/os_in.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\netinet\os_in.h
+	"ace/os_include/os_inttypes.h"
+	"ace/os_include/sys/os_socket.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_socket.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_uio.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_uio.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_limits.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_arpa_inet.inl
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_stdio.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_ctype.h
+	"ace/config-all.h"
+	"ace/os_include/os_ctype.h"
+	"ace/os_include/os_wctype.h"
+	"ace/OS_NS_ctype.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_wctype.h
+	"ace/os_include/os_wchar.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_ctype.inl
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_wctype.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_wctype.h
+	"ace/config-all.h"
+	"ace/os_include/os_ctype.h"
+	"ace/os_include/os_wctype.h"
+	"ace/OS_NS_wctype.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_wctype.inl
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_dirent.h
+	"ace/config-all.h"
+	"ace/os_include/os_dirent.h"
+	"ace/OS_NS_dirent.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_dirent.h
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_limits.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_dirent.inl
+	"ace/OS_Memory.h"
+	"ace/OS_NS_string.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_dlfcn.h
+	"ace/config-all.h"
+	"ace/os_include/os_dlfcn.h"
+	"ace/OS_NS_dlfcn.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_dlfcn.h
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_dlfcn.inl
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_unistd.h"
+	"ace/Default_Constants.h"
+	"ace/os_include/os_fcntl.h"
+	"ace/os_include/os_string.h"
+	"ace/OS_NS_stdio.h"
+	"ace/OS_Memory.h"
+	"ace/OS_NS_string.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_math.h
+	"ace/config-all.h"
+	"ace/os_include/os_math.h"
+	"ace/OS_NS_math.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_math.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_math.inl
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_netdb.h
+	"ace/config-all.h"
+	"ace/os_include/os_netdb.h"
+	"ace/OS_NS_netdb.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_netdb.h
+	"ace/os_include/netinet/os_in.h"
+	"ace/os_include/os_limits.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_netdb.inl
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_poll.h
+	"ace/config-all.h"
+	"ace/os_include/os_poll.h"
+	"ace/OS_NS_poll.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_poll.h
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_poll.inl
+	"ace/Time_Value.h"
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_regex.h
+	"ace/config-all.h"
+	"ace/OS_NS_regex.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_regex.inl
+	"ace/OS_NS_errno.h"
+	"ace/os_include/os_regex.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_regex.h
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_signal.h
+	"ace/config-lite.h"
+	"ace/os_include/os_signal.h"
+	"ace/os_include/os_pthread.h"
+	"ace/OS_NS_signal.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_pthread.h
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/os_signal.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_signal.inl
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_strings.h
+	"ace/config-all.h"
+	"ace/os_include/os_strings.h"
+	"ace/OS_NS_strings.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_strings.inl
+	"ace/OS_NS_wchar.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stropts.h
+	"ace/config-all.h"
+	"ace/os_include/os_stropts.h"
+	"ace/os_include/os_stdio.h"
+	"ace/OS_NS_stropts.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_stropts.h
+	"ace/os_include/os_unistd.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_stropts.inl
+	"ace/os_include/os_errno.h"
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_macros.h"
+	"ace/OS_Memory.h"
+	"ace/OS_QoS.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_qos.h
+	"ace/os_include/sys/os_uio.h"
+	"ace/OS_NS_stropts.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_mman.h
+	"ace/config-all.h"
+	"ace/Global_Macros.h"
+	"ace/os_include/sys/os_types.h"
+	"ace/os_include/sys/os_mman.h"
+	"ace/OS_NS_sys_mman.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_mman.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_mman.inl
+	"ace/OS_NS_fcntl.h"
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_stdio.h"
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_msg.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_msg.h"
+	"ace/OS_NS_sys_msg.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_msg.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_ipc.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_ipc.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_types.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_msg.inl
+	"ace/OS_NS_errno.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_resource.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_resource.h"
+	"ace/OS_NS_sys_resource.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_resource.inl
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_macros.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_select.h
+	"ace/config-all.h"
+	"ace/OS_NS_unistd.h"
+	"ace/os_include/sys/os_select.h"
+	"ace/OS_NS_sys_select.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_select.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_time.h"
+	"ace/os_include/os_signal.h"
+	"ace/os_include/os_unistd.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_select.inl
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_macros.h"
+	"ace/Time_Value.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_shm.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_shm.h"
+	"ace/OS_NS_sys_shm.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_shm.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_ipc.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_shm.inl
+	"ace/OS_NS_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_socket.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_socket.h"
+	"ace/os_include/net/os_if.h"
+	"ace/OS_NS_stropts.h"
+	"ace/OS_NS_sys_socket.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\net\os_if.h
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_socket.inl
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_macros.h"
+	"ace/OS_NS_sys_uio.h"
+	"ace/OS_NS_stdio.h"
+	"ace/OS_QoS.h"
+	"ace/Global_Macros.h"
+	"ace/os_include/netinet/os_in.h"
+	"ace/OS_NS_string.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_uio.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_uio.h"
+	"ace/OS_NS_sys_uio.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_uio.inl
+	"ace/os_include/os_errno.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_time.h
+	"ace/config-all.h"
+	"ace/Time_Value.h"
+	"ace/OS_NS_sys_time.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_time.inl
+	"ace/os_include/sys/os_time.h"
+	"ace/os_include/os_errno.h"
+	"ace/OS_NS_time.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_time.h
+	"ace/config-all.h"
+	"ace/Basic_Types.h"
+	"ace/os_include/os_time.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_time.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_time.inl
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_errno.h"
+	"ace/Time_Value.h"
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_sys_time.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_wait.h
+	"ace/config-all.h"
+	"ace/os_include/sys/os_wait.h"
+	"ace/OS_NS_sys_wait.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_sys_wait.inl
+	"ace/OS_NS_errno.h"
+	"ace/Global_Macros.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_thread.h
+	"ace/config-all.h"
+	"ace/Global_Macros.h"
+	"ace/Basic_Types.h"
+	"ace/Default_Constants.h"
+	"ace/os_include/os_pthread.h"
+	"ace/os_include/os_sched.h"
+	"ace/Base_Thread_Adapter.h"
+	"ace/os_include/sys/os_sem.h"
+	"ace/os_include/os_semaphore.h"
+	"ace/OS_Memory.h"
+	"ace/OS_NS_signal.h"
+	"ace/ACE_export.h"
+	"ace/Object_Manager_Base.h"
+	"ace/os_include/os_fcntl.h"
+	"ace/os_include/os_netdb.h"
+	"ace/os_include/os_semaphore.h"
+	"ace/os_include/os_signal.h"
+	"ace/os_include/os_stdio.h"
+	"ace/os_include/os_stdlib.h"
+	"ace/os_include/os_stropts.h"
+	"ace/os_include/os_unistd.h"
+	"ace/os_include/arpa/os_inet.h"
+	"ace/os_include/sys/os_select.h"
+	"ace/os_include/sys/os_socket.h"
+	"ace/OS_NS_Thread.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_sched.h
+	"ace/os_include/os_time.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\base_thread_adapter.h
+	"ace/OS_Log_Msg_Attributes.h"
+	"ace/OS_Log_Msg_Attributes.h"
+	"os_include/sys/os_time.h"
+	"ace/Base_Thread_Adapter.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_log_msg_attributes.h
+	"ace/os_include/os_stdio.h"
+	"ace/iosfwd.h"
+	"ace/Copy_Disabled.h"
+	"ace/OS_Log_Msg_Attributes.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\copy_disabled.h
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_log_msg_attributes.inl
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\base_thread_adapter.inl
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\sys\os_sem.h
+	"ace/config-lite.h"
+	"ace/os_include/sys/os_ipc.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\os_semaphore.h
+	"ace/os_include/os_time.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_ns_thread.inl
+	"ace/OS_NS_macros.h"
+	"ace/Time_Value.h"
+	"ace/OS_NS_sys_mman.h"
+	"ace/OS_NS_sys_time.h"
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_unistd.h"
+	"ace/OS_NS_stdio.h"
+	"ace/OS_NS_errno.h"
+	"ace/OS_NS_sys_stat.h"
+	"ace/OS_NS_sys_select.h"
+	"ace/OS_NS_fcntl.h"
+	"ace/Handle_Set.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\handle_set.h
+	"ace/os_include/sys/os_select.h"
+	"ace/os_include/os_limits.h"
+	"ace/Handle_Set.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\handle_set.inl
+	"ace/Log_Category.h"
+	"ace/os_include/os_strings.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\log_category.h
+	"ace/Log_Priority.h"
+	"ace/Log_Msg.h"
+	"ace/Thread_Mutex.h"
+	"ace/Log_Category.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\log_priority.h
+	"ace/config-lite.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\log_msg.h
+	"ace/Global_Macros.h"
+	"ace/Default_Constants.h"
+	"ace/Log_Priority.h"
+	"ace/os_include/os_limits.h"
+	"ace/Synch_Traits.h"
+	"ace/Assert.h"
+	"ace/OS_Log_Msg_Attributes.h"
+	"ace/Log_Msg.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\synch_traits.h
+	"ace/Lock.h"
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\lock.h
+	"ace/Lock.inl"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\lock.inl
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\log_msg.inl
+	"ace/OS_NS_string.h"
+	"ace/OS_NS_unistd.h"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\thread_mutex.h
+	"ace/Null_Mutex.h"
+	"ace/OS_NS_Thread.h"
+	"ace/Thread_Mutex.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\null_mutex.h
+	"ace/os_include/os_errno.h"
+	"ace/Global_Macros.h"
+	"ace/OS_Memory.h"
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\thread_mutex.inl
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\log_category.inl
+
+1395814799 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_tli.h
+	"ace/config-all.h"
+	"ace/OS_Errno.h"
+	"ace/ACE_export.h"
+	"ace/os_include/netinet/os_tcp.h"
+	"ace/OS_TLI.inl"
+
+1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_include\netinet\os_tcp.h
+
+1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_tli.inl
+	"ace/OS_NS_errno.h"
+
+1395871398 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.cpp
+	"config.h"
+
+1395871411 c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.h
+	<string>
+	<cstdlib>
+	<cstdio>
+	<sys/sockets.h>
+	<winsock.h>
+
