@@ -18,5 +18,6 @@
 #pragma comment (lib, "wsock32.lib")
 
 bool bot(string[8][2]);
+int recv_all(int, bool, size_t, int);
 
 #endif // bot
