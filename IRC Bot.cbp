@@ -31,7 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-std=gnu++11" />
+			<Add directory="C:/Users/Ashley/Downloads/Heihachi/DevPaks/include" />
 		</Compiler>
+		<Linker>
+			<Add library="ace" />
+			<Add directory="C:/Users/Ashley/Downloads/Heihachi/DevPaks/lib" />
+		</Linker>
+		<Unit filename="inc/config.cpp" />
+		<Unit filename="inc/config.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

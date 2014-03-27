@@ -1,11 +1,7 @@
 # depslib dependency file v1.0
-1395819518 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\main.cpp
-	<iostream>
-	<string>
-	<cstring>
-	<cstdio>
-	<cstdlib>
-	<ace/OS.h>
+1395895879 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\main.cpp
+	"inc/config.h"
+	"inc/bot.h"
 
 1395814798 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os.h
 	"ace/Cleanup.h"
@@ -898,13 +894,25 @@
 1395814797 c:\users\ashley\downloads\heihachi\devpaks\include\ace\os_tli.inl
 	"ace/OS_NS_errno.h"
 
-1395871398 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.cpp
+1395899490 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.cpp
 	"config.h"
 
-1395871411 c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.h
+1395899971 c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\config.h
 	<string>
+	<iostream>
 	<cstdlib>
+	<stdlib.h>
 	<cstdio>
-	<sys/sockets.h>
-	<winsock.h>
+	<stdio.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdio.h>
+	<windows.h>
+
+1395898892 source:c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\bot.cpp
+	"config.h"
+	"bot.h"
+
+1395897207 c:\users\ashley\downloads\heihachi\homework\projects\irc-bot\inc\bot.h
+	"config.h"
 

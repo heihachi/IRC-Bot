@@ -9,7 +9,7 @@ bool configuration(string config[8][2])
     // a 2d array containing server info and what they are
     // server
     config[0][0] = "server";
-    config[0][1] = "irc.example.com";
+    config[0][1] = "irc.truewow.org";
     // port
     config[1][0] = "port";
     config[1][1] = "6667";
