@@ -6,8 +6,16 @@
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "27015"
 
+bool debug = true;
+
 bool bot(string config[8][2])
 {
+    string hostName = config[0][1].c_str();
+    string portString = config[1][1].c_str();
+    string channelName = config[2][1].c_str();
+    string nickName = config[3][1].c_str();
+
+    printf("Connecting to %s:%s\nNick: %s | Channel: %s\n", hostName.c_str(), portString.c_str(), nickName.c_str(), channelName.c_str());
     // This is to output the config
 /*    for(int x = 0;x<8;x++)
         for(int y = 0;y<2;y++)
@@ -19,16 +27,12 @@ bool bot(string config[8][2])
     struct addrinfo *result = NULL,
                     *ptr = NULL,
                     hints;
-    char *sendbuf = "this is a test";
+    string commandNick = "NICK "+nickName;
+    printf("%s\n", commandNick.c_str());
+    const char *sendbuf = commandNick.c_str();
     char recvbuf[DEFAULT_BUFLEN];
     int iResult;
     int recvbuflen = DEFAULT_BUFLEN;
-
-    // Validate the parameters
-//    if (argc != 2) {
-//        printf("usage: %s server-name\n", argv[0]);
-//        return 1;
-//    }
 
     // Initialize Winsock
     iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
@@ -43,7 +47,7 @@ bool bot(string config[8][2])
     hints.ai_protocol = IPPROTO_TCP;
 
     // Resolve the server address and port
-    iResult = getaddrinfo(config[0][1].c_str(), config[1][1].c_str(), &hints, &result);
+    iResult = getaddrinfo(hostName.c_str(), portString.c_str(), &hints, &result);
     if ( iResult != 0 ) {
         printf("getaddrinfo failed with error: %d\n", iResult);
         WSACleanup();
@@ -64,7 +68,8 @@ bool bot(string config[8][2])
 
         // Connect to server.
         iResult = connect( ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
-        if (iResult == SOCKET_ERROR) {
+        if (iResult == SOCKET_ERROR)
+        {
             closesocket(ConnectSocket);
             ConnectSocket = INVALID_SOCKET;
             continue;
@@ -82,7 +87,8 @@ bool bot(string config[8][2])
 
     // Send an initial buffer
     iResult = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
-    if (iResult == SOCKET_ERROR) {
+    if (iResult == SOCKET_ERROR)
+    {
         printf("send failed with error: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
         WSACleanup();

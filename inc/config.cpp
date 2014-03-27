@@ -12,7 +12,7 @@ bool configuration(string config[8][2])
     config[0][1] = "irc.truewow.org";
     // port
     config[1][0] = "port";
-    config[1][1] = "6667";
+    config[1][1] = "10001";
     // channel
     config[2][0] = "channel";
     config[2][1] = "#bot";
