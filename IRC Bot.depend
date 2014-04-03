@@ -920,3 +920,23 @@
 	<stdio.h>
 	<windows.h>
 
+1396487715 source:c:\users\ashley\downloads\heihachi\projects\irc-bot\irc-bot.cpp
+	"inc/bot.h"
+
+1396536392 c:\users\ashley\downloads\heihachi\projects\irc-bot\inc\bot.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<windows.h>
+	<string>
+	<ctime>
+	<iostream>
+	<cstdlib>
+	<stdlib.h>
+	<cstdio>
+	<string.h>
+	<stdio.h>
+	<stdio.h>
+
+1396537966 source:c:\users\ashley\downloads\heihachi\projects\irc-bot\inc\bot.cpp
+	"bot.h"
+

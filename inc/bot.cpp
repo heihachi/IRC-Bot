@@ -1,43 +1,60 @@
 /*
     Main file for the bot
 */
-#include "config.h"
+
 #include "bot.h"
 #define DEFAULT_BUFLEN 1024
-#define DEFAULT_PORT "27015"
+#define MAXDATASIZE 1024
 
-bool debug = true;
+const bool debug = true;
 
-bool bot(string config[8][2])
+IrcBot::IrcBot(Config config)
 {
-    string hostName = config[0][1].c_str();
-    string portString = config[1][1].c_str();
-    string channelName = config[2][1].c_str();
-    string userName = config[3][1].c_str();
-    string nickName = config[4][1].c_str();
+    hostName = config.server.c_str();
+    portString = config.port.c_str();
+    channelName = config.channel.c_str();
+    userName = config.userName.c_str();
+    nickName = config.nickName.c_str();
+    userPass = config.userPass.c_str();
+}
 
-    string sendCommands[4] = { "PONG attack", "USER "+userName, "NICK "+nickName, "JOIN "+channelName };
+IrcBot::~IrcBot()
+{
+    #ifdef WIN32
+    iResult = shutdown(ConnectSocket, SD_SEND);
+    if (iResult == SOCKET_ERROR)
+    {
+        printf("shutdown failed with error: %d\n", WSAGetLastError());
+        closesocket(ConnectSocket);
+        WSACleanup();
+    }
+    #elif LINUX
+    close(ConnectSocket);
+    #endif // WIN32
+}
+
+bool IrcBot::bot()
+{
     char *text;
     char buf[1024];
     int bytes_read;
     int bytes_send;
 
+    string sendCommands[5] = { "PONG", "USER "+userName+" 8 * :"+userName, "NICK "+nickName, "PRIVMSG nickserv identify "+userPass, "JOIN "+channelName };
+
     printf("Connecting to %s:%s\nNick: %s | Channel: %s\n", hostName.c_str(), portString.c_str(), nickName.c_str(), channelName.c_str());
-    // This is to output the config
-/*    for(int x = 0;x<8;x++)
-        for(int y = 0;y<2;y++)
-            printf("%-25s\n", config[x][y].c_str());
-*/
-    // start WinSock Initialization
-    WSADATA wsaData;
-    SOCKET ConnectSocket = INVALID_SOCKET;
+
+    ConnectSocket = INVALID_SOCKET;
     struct addrinfo *result = NULL,
                     *ptr = NULL,
                     hints;
-    const char *sendbuf = sendCommands[1].c_str();
+    const char *sendbuf = "\nPONG :Bot\n";
     char recvbuf[DEFAULT_BUFLEN] = { };
-    int iResult;
     int recvbuflen = DEFAULT_BUFLEN;
+
+    #ifdef WIN32
+    // start WinSock Initialization
+    WSADATA wsaData;
 
     // Initialize Winsock
     iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
@@ -45,6 +62,7 @@ bool bot(string config[8][2])
         printf("WSAStartup failed with error: %d\n", iResult);
         return 1;
     }
+    #endif // WIN32
 
     ZeroMemory( &hints, sizeof(hints) );
     hints.ai_family = AF_INET;
@@ -55,7 +73,9 @@ bool bot(string config[8][2])
     iResult = getaddrinfo(hostName.c_str(), portString.c_str(), &hints, &result);
     if ( iResult != 0 ) {
         printf("getaddrinfo failed with error: %d\n", iResult);
+        #ifdef WIN32
         WSACleanup();
+        #endif // WIN32
         return 1;
     }
 
@@ -85,62 +105,231 @@ bool bot(string config[8][2])
 
     if (ConnectSocket == INVALID_SOCKET) {
         printf("Unable to connect to server!\n");
+        #ifdef WIN32
         WSACleanup();
+        #endif // WIN32
         return 1;
     }
 
     // Send an initial buffer
     iResult = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
-    printf("Sendbuf: %s\n", sendbuf);
+    if(DEBUG == true)
+        printf("Sendbuf: %s\n", sendbuf);
     if (iResult == SOCKET_ERROR)
     {
+        #ifdef WIN32
         printf("send failed with error: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
         WSACleanup();
+        #endif // WIN32
         return 1;
     }
 
     printf("Bytes Sent: %ld\n", iResult);
 
-    // shutdown the connection since no more data will be sent
-//    iResult = shutdown(ConnectSocket, SD_SEND);
-//    if (iResult == SOCKET_ERROR) {
-//        printf("shutdown failed with error: %d\n", WSAGetLastError());
-//        closesocket(ConnectSocket);
-//        WSACleanup();
-//        return 1;
-//    }
-    bool sentData = false;
     // Receive until the peer closes the connection
-    do {
+    int count = 0;
+    while(1)
+    {
+        count++;
 
-        iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
-        if ( iResult > 0 )
+        switch(count)
         {
-            printf("Bytes received: %d\n%s\n", iResult, recvbuf);
-            if(sentData == false)
-            {
-                sentData = true;
-                for(int x = 0;x<4;x++)
-                {
-                    // need to set a recv() here
-                    sendbuf = sendCommands[x].c_str();
-                    printf("Sending: %s\n", sendbuf);
-                    bytes_send = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
-                    printf("Bytes received: %d\n%s\n", iResult, recvbuf);
-                }
-            }
+            case 2:
+                // we send data to server after 3 counts
+                // nick
+                sendCommand(ConnectSocket, "\nUSER %s Bot Bot : %s\n", userName.c_str(), userName.c_str());
+                // user
+                sendCommand(ConnectSocket, "\nNICK %s\r\n", nickName.c_str());
+                break;
+            case 11:
+                // register
+                sendCommand(ConnectSocket, "\nPRIVMSG nickserv identify %s\r\n", userPass.c_str());
+                break;
+            case 12:
+                // we join channel
+                sendCommand(ConnectSocket, "\nJOIN %s\r\n", channelName.c_str());
+            default:
+                break;
         }
-        else if ( iResult == 0 )
-            printf("Connection closed\n");
-        else
-            printf("recv failed with error: %d\n", WSAGetLastError());
-    printf("%s\n", recvbuf);
-    } while( iResult > 0 );
 
+        // Recv and print data
+        bytes_read = recv(ConnectSocket, buf, MAXDATASIZE-1, 0);
+        buf[bytes_read]='\0';
+        cout << buf << endl;
+        // buf is the data that is recieved
+
+        // pass buffer to message handler
+        msgHandler(buf);
+
+        // if we get ping
+        if(charSearch(buf,"PING"))
+        {
+            sendPong(buf);
+        }
+
+        //break if connection closed
+        if(bytes_read == 0)
+        {
+            cout << "Connection closed!" << endl;
+            cout << timeNow() << endl;
+
+            break;
+        }
+    }
+#ifdef WIN32
     // cleanup
     closesocket(ConnectSocket);
     WSACleanup();
+#elif LINUX
+    close(ConnectSocket);
+#endif
+    return true;
+}
 
+bool IrcBot::charSearch(char *toSearch, char *searchFor)
+{
+    int len = strlen(toSearch);
+    int forLen = strlen(searchFor); // The length of the searchfor field
+
+    //Search through each char in toSearch
+    for (int i = 0; i < len;i++)
+    {
+        //If the active char is equil to the first search item then search toSearch
+        if (searchFor[0] == toSearch[i])
+        {
+            bool found = true;
+            //search the char array for search field
+            for (int x = 1; x < forLen; x++)
+            {
+                if (toSearch[i+x]!=searchFor[x])
+                {
+                    found = false;
+                }
+            }
+
+            //if found return true;
+            if (found == true)
+                return true;
+        }
+    }
+
+    return 0;
+}
+
+bool IrcBot::isConnected(char *buf)
+{
+    //If we find /MOTD then its ok join a channel
+    if (charSearch(buf,"/MOTD") == true)
+        return true;
+    else
+        return false;
+}
+
+char * IrcBot::timeNow()
+{
+    time_t rawtime;
+    struct tm * timeinfo;
+
+    time(&rawtime);
+    timeinfo = localtime(&rawtime);
+
+    return asctime(timeinfo);
+}
+
+// this will be used later with mysql
+bool IrcBot::sendData(string msg)
+{
+    //send some data
+    int len = strlen(msg.c_str());
+    msg = msg+"/r/n";
+    int btyes_sent = send(ConnectSocket, msg.c_str(), len, 0);
+    cout << "Bytes Sent: " << btyes_sent << endl;
+    if(btyes_sent == 0)
+    {
+        cout << "Couldn't send " << msg << endl;
+        return false;
+    }
+    else
+    {
+        cout << "Sent " << msg << endl;
+    }
+}
+
+int IrcBot::sendCommand(int sock, const char *format_p, ...)
+{
+    va_list args;
+    char buffer[512] = {0};
+
+    va_start(args, format_p);
+    vsnprintf(buffer, sizeof(buffer), format_p, args);
+    va_end(args);
+
+    printf(">> %s>>\n", buffer);
+
+    return (send(sock, buffer, strlen(buffer), 0));
+}
+
+bool IrcBot::sendPong(char *buf)
+{
+    // get reply address
+    // loop through bug and find location of PING
+    // search through each char in toSearch
+
+    char * toSearch = "PING";
+
+    for(int i = 0;i<strlen(buf);i++)
+    {
+        if(buf[i] == toSearch[0])
+        {
+            bool found = true;
+            for(int x = 1;x<4;x++)
+            {
+                if(buf[i+x] != toSearch[x])
+                    found = false;
+            }
+            // if found return true
+            if(found == true)
+            {
+                int count = 0;
+                //Count the chars
+                for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)
+                {
+                    count++;
+                }
+
+                //Create the new char array
+                char returnHost[count + 5];
+                returnHost[0]='P';
+                returnHost[1]='O';
+                returnHost[2]='N';
+                returnHost[3]='G';
+                returnHost[4]=' ';
+
+                count = 0;
+                //set the hostname data
+                for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)
+                {
+                    returnHost[count+5]=buf[x];
+                    count++;
+                }
+
+                //send the pong
+                //if (sendData(returnHost))
+                if(sendCommand(ConnectSocket, "%s\r\n", returnHost))
+                {
+                    cout << "Sent ping pong ~~ " << timeNow() << endl;
+                }
+                return true;
+            }
+        }
+    }
+}
+
+bool IrcBot::msgHandler(char * buf)
+{
+    // add code here to do a search
+    if(charSearch(buf, "hello"))
+        sendData("PRIVMSG "+channelName+" :hello\r\n");
     return true;
 }

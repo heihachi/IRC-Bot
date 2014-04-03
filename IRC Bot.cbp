@@ -38,9 +38,7 @@
 		</Linker>
 		<Unit filename="inc/bot.cpp" />
 		<Unit filename="inc/bot.h" />
-		<Unit filename="inc/config.cpp" />
-		<Unit filename="inc/config.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="IRC-Bot.cpp" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
